@@ -25,7 +25,7 @@ a {
 
 p {
     margin: 10px 0;
-    overflow-wrap: break-word;
+    
     text-align: left;
 }
 
@@ -34,12 +34,12 @@ label {
     display: block;
 }
 
-button, input {
+button:not(#addEvent), input {
     padding: 4px;
     border: 1px solid var(--disabled-color);
 }
 
-button {
+button:not(#addEvent) {
     outline: none;
     background: transparent;
     border-radius: 5px;
@@ -48,11 +48,11 @@ button {
     cursor: pointer;
 }
 
-button.active {
+button:not(#addEvent).active {
     color: var(--primary-color);
 }
 
-button.active:after {
+button:not(#addEvent).active:after {
     content: "";
     display: block;
     margin: 0 auto;
@@ -183,3 +183,43 @@ select {
 .close-btn:hover {
     background-color: #DCDCDC;
 }
+
+
+#collumn{
+    margin-top: 10%;
+}
+#addEvent{
+
+    font-size: 20px;
+margin-bottom: 5%;
+margin-top: 1%;
+margin:0 auto;
+display:block;
+font-weight: 600;
+color: #172b4d;
+}
+
+#row{
+    display: flex;
+}
+
+#rectangle{
+    flex: 33.33%;
+    padding: 5px;
+}
+
+#row {
+    justify-content: center;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: "item";
+    
+   
+  }
+  
+#rectangle {
+
+   
+  }
+  
+ 

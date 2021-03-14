@@ -12,7 +12,7 @@ const Homepage = () => {
 
         setItems(prevState => {
             const newItems = prevState
-                .filter(i => i.id !== item.id)
+                .filter(i => i.status !== item.status)
                 .concat({ ...item, status, icon: mapping.icon });
             return [ ...newItems ];
         });
@@ -31,16 +31,19 @@ const Homepage = () => {
         <div className={"row"}>
             {statuses.map(s => {
                 return (
-                    <div key={status} className={"col-wrapper"}>
+                    <div id="row">
+                    <div id="rectangle" key={status} className={"col-wrapper"}>
                         <h2 className={"col-header"}>{s.status.toUpperCase()}</h2>
                         <DropWrapper onDrop={onDrop} status={s.status}>
-                            <Col>
-                                {items
+                        <Col>
+                            {items
                                     .filter(i => i.status === s.status)
-                                    .map((i, idx) => <Item key={i.id} item={i} index={idx} moveItem={moveItem} status={s} />)
+                                    .map((i, idx) => <Item key={i.status} item={i} index={idx} moveItem={moveItem} status={s} />)
                                 }
                             </Col>
+                          
                         </DropWrapper>
+                    </div>
                     </div>
                 );
             })}
