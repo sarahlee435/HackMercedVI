@@ -1,7 +1,6 @@
-# React Drag n Drop Tutorial 
+# Student Organizer 
 
-Create a Trello Dashboard clone in React.js. The code needed for this is super easy thanks to react-dnd!
-
+Created an organizer for students to organizer their assignments when school is online.
 ## Installation
 
 Use the cmd line to install dependencies. 
