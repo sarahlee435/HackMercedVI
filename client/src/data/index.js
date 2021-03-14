@@ -40,7 +40,14 @@ const statuses = [{
     status: "Thursday",
     icon: "✅",
     color: "#3981DE"
-}, {
+}
+
+
+
+];
+
+const statuses2 = [
+   {
     status: "Friday",
     icon: "✅",
     color: "#3981DE"
@@ -59,4 +66,4 @@ const statuses = [{
 ];
 
 
-export { data, statuses };
+export { data, statuses,statuses2 };

@@ -6,7 +6,6 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "dev": "nodemon server/index.js"
-  
   },
   "dependencies": {
     "core-js": "^3.2.1",

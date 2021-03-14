@@ -1,15 +1,22 @@
 import React from "react";
-
-const Button = () => {
-    return (
-     
-<button id="addEvent">
-Add Event
-</button>
-           
-   
-
-    );
-};
-
-export default Button;
+import PopUp from "./Popup"; 
+export default class App extends React.Component {
+  state = {
+   seen: false
+   };
+  togglePop = () => {
+   this.setState({
+    seen: !this.state.seen
+   });
+  };
+render() {
+  return (
+   <div>
+    <div className="btn" onClick={this.togglePop}>
+      <button id="addEvent">Add Event</button>
+    </div>
+    {this.state.seen ? <PopUp toggle={this.togglePop} /> : null}
+   </div>
+  );
+ }
+}
