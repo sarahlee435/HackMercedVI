@@ -7,14 +7,18 @@
 }
 
 html {
-    background: rgb(0,73,191);
-    background: linear-gradient(90deg, rgba(0,73,191,1) 0%, rgba(190,190,255,1) 46%, rgba(0,212,255,1) 100%);
+    background-image: url(./background.png);
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 body {
     color: var(--text-color);
     font-family: sans-serif;
     margin: 0;
+
 }
 
 a {
