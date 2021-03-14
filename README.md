@@ -1,6 +1,12 @@
-# Student Organizer 
+## HackMerced VI
+Group: Fayed Raza, Sarah Lee
+# Planner Organizer 
 
 Created an organizer for students to organizer their assignments when school is online.
+
+##For more information
+https://devpost.com/software/saltedfishcoffee
+
 ## Installation
 
 Use the cmd line to install dependencies. 
