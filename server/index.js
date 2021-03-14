@@ -15,4 +15,4 @@ app.get('/*', (req, res) => {
     res.sendFile(path.join(__dirname, '../build', 'index.html'));
 });
 
-app.listen(5012);
+app.listen(5022);

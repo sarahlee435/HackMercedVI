@@ -4,7 +4,7 @@ const Col = ({ isOver, children }) => {
     const className = isOver ? "highlight-region" : "";
 
     return (
-        <div id="collumn" className={`col${className}`}>
+        <div id="column" className={`col${className}`}>
        
             {children}
         </div>

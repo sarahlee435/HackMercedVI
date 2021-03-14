@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { DndProvider } from "react-dnd";
 import Backend from "react-dnd-html5-backend";
 import Button from "./components/Button";
+import Homepage2 from "./pages/Homepage2";
 
 const App = () => {
     return (
@@ -11,6 +12,7 @@ const App = () => {
             <Header />
             <Button/>
             <Homepage />
+            <Homepage2 />
         
         </DndProvider>
     );z
