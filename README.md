@@ -1,6 +1,6 @@
-## HackMerced VI
+# HackMerced VI
 Group: Fayed Raza, Sarah Lee
-# Planner Organizer 
+## Planner Organizer 
 
 Created an organizer for students to organizer their assignments when school is online.
 
